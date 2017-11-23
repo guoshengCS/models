@@ -1,6 +1,8 @@
 ## 使用说明
 
-`tf2paddle.py`提供了将TensorFlow训练的模型转换为PaddlePaddle可使用的模型的接口`TFModelConverter`，其封装了图像领域常用的Convolution、BatchNorm等layer的转换函数，可以完成VGG、ResNet等常用模型的转换。模型转换的基本过程是：基于TensorFlow的Python API获取variable，将各variable对应到PaddlePaddle中layer的参数，进行适配后序列化保存输出可以直接为PaddlePaddle的Python API加载使用的模型文件。
+`tf2paddle.py`中的工具类`TFModelConverter`实现了将TensorFlow训练好的模型文件转换为PaddlePaddle可加载的模型文件。目前能够支持图像领域常用的：卷积层（`Convolution`）、`BatchNorm`层和全连接（`Fully Connected`）层从TensorFlow训练结果向PaddlePaddle模型文件转化。图像领域常用的 `ResNet` `VGG` 网络都是以此为基础，能够成功转换到PaddlePaddle可加载的模型，进一步用于预训练，或是开发预测服务等。
+
+模型转换的基本过程是：基于TensorFlow的Python API获取variable，将各variable对应到PaddlePaddle中layer的参数，进行适配后序列化保存输出可以直接为PaddlePaddle的Python API加载使用的模型文件。
 
 为使TensorFlow模型中的variable能够正确对应到PaddlePaddle模型中layer的参数，正确完成转换，模型转换具有如下约束：
 
