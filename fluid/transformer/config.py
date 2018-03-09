@@ -4,7 +4,7 @@ class TrainTaskConfig(object):
     pass_num = 2
 
     # number of sequences contained in a mini-batch.
-    batch_size = 64
+    batch_size = 2  #64
 
     # the hyper params for Adam optimizer.
     learning_rate = 0.001
@@ -16,6 +16,15 @@ class TrainTaskConfig(object):
     warmup_steps = 4000
 
 
+class InferTaskConfig(object):
+    use_gpu = False
+    # number of sequences contained in a mini-batch.
+    batch_size = 1
+    # the params for beam-search
+    beam_size = 5
+    max_length = 50
+
+
 class ModelHyperParams(object):
     # Dictionary size for source and target language. This model directly uses
     # paddle.dataset.wmt16 in which <bos>, <eos> and <unk> token has
@@ -23,6 +32,10 @@ class ModelHyperParams(object):
     # sequences in a mini-batch are padded to have the same length. A <pad> token is
     # added into the original dictionary in paddle.dateset.wmt16.
 
+    # index for <bos> token
+    bos_idx = 0
+    # index for <eos> token
+    eos_idx = 1
     # size of source word dictionary.
     src_vocab_size = 10000
     # index for <pad> token in source language.
@@ -44,9 +57,9 @@ class ModelHyperParams(object):
     # the input and output of multi-head attention, position-wise feed-forward
     # networks, encoder and decoder.
 
-    d_model = 512
+    d_model = 128  #512
     # size of the hidden layer in position-wise feed-forward networks.
-    d_inner_hid = 1024
+    d_inner_hid = 128  #1024
     # the dimension that keys are projected to for dot-product attention.
     d_key = 64
     # the dimension that values are projected to for dot-product attention.
@@ -56,8 +69,24 @@ class ModelHyperParams(object):
     # number of sub-layers to be stacked in the encoder and decoder.
     n_layer = 6
     # dropout rate used by all dropout layers.
-    dropout = 0.1
+    dropout = 0.
 
+
+encoder_input_data_names = (
+    "src_word",
+    "src_pos",
+    "src_slf_attn_bias", )
+
+decoder_input_data_names = (
+    "trg_word",
+    "trg_pos",
+    "trg_slf_attn_bias",
+    "trg_src_attn_bias",
+    "enc_output", )
+
+label_data_names = (
+    "lbl_word",
+    "lbl_weight", )
 
 # Names of position encoding table which will be initialized externally.
 pos_enc_param_names = (

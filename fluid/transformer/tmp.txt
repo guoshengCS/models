@@ -1,0 +1,9161 @@
+blocks {
+  idx: 0
+  parent_idx: -1
+  vars {
+    name: "layer_norm_11.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "dropout_18.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_18.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_35.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_35.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_35.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_34.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_34.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_34.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_10.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_10.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_10.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "tmp_11"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "dropout_16.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reduce_sum_5.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "matmul_10.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_22.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_20.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_32.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_10.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_31.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_31.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_30.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_30.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_9.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_9.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_9.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "dropout_15.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "matmul_11.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_29.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_29.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_28.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_28.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_28.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_28.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_8.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_8.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "exp_5.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "tmp_9"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "dropout_14.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_14.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_27.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_13.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_20.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_13.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "elementwise_div_4.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reduce_sum_4.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "exp_4.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "matmul_8.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_11.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "scale_4.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_18.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_19.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_18.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_26.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_26.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "reshape_21.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_25.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_25.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_24.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_7.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_7.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "tmp_8"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "reshape_17.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_12.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_23.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "tmp_7"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "reshape_24.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_11.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_10.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_10.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "tmp_10"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "fc_22.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_14.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_16.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_14.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_12.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_19.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_13.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_34.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_27.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 512
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_20.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_19.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "elementwise_add_4.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_13.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_5.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_18.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "dropout_0.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_8.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_6.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_5.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "dropout_9.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_22.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_18.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_17.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_17.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_16.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_16.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_16.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_16.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_12.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_3.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_4.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_4.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_34.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_4.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_1.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "reduce_sum_3.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_8.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_15.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_9.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "dropout_9.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "tmp_3"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "fc_15.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_15.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 512
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "reshape_12.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_2.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "scale_3.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_11.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "matmul_5.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_7.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "dropout_7.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "matmul_4.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_19.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_23.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "scale_2.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "src_pos_enc_table"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "reshape_11.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "matmul_7.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_3.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "matmul_3.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_8.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_9.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_4.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "transpose_8.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_9.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_14.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "tmp_12"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "fc_13.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_9.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_3.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_6.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_3.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_3.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_3.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_1.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "dropout_10.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_6.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_11.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_11.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "dropout_6.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_0.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_10.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "elementwise_add_5.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_10.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "transpose_7.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_5.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_2.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_11.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "dropout_12.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "exp_3.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_29.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "fc_20.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_2.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_4.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_22.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_2.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "dropout_17.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_6.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_11.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "dropout_5.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_9.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_1.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_24.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_9.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 512
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_3.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "elementwise_div_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "scale_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_11.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_4.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_16.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "reduce_sum_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_1.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_8.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "src_pos"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: 102
+          dims: 1
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_7.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "matmul_2.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_22.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "reshape_6.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_17.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "elementwise_div_5.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_2.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "embedding_0.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 10001
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "transpose_4.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_5.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "exp_2.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_8.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_8.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_10.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_7.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "exp_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_7.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_6.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "elementwise_add_3.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_7.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_6.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_4.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_14.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_11.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_4.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_22.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_8.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_3.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_7.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_15.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_5.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "elementwise_div_2.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_5.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_28.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_5.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_33.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 512
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "transpose_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_10.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_22.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_4.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reduce_sum_2.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_12.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_7.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "matmul_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_4.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "matmul_6.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "elementwise_add_2.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_0.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "tmp_5"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "fc_0.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_17.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "transpose_23.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_15.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_5.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "exp_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "src_slf_attn_bias"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_0.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "embedding_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reduce_sum_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_6.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_21.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 512
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "dropout_17.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_29.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_23.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_4.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_11.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_2.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_3.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 512
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "layer_norm_5.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_35.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_3.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_0.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "matmul_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "tmp_6"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "dropout_1.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "elementwise_div_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_23.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "elementwise_div_3.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_10.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "elementwise_add_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_23.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "scale_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_2.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_16.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_11.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_8.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_2.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_2.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "matmul_9.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_5.b_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "transpose_17.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "src_word"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: INT64
+          dims: 102
+          dims: 1
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_4.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "scale_5.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_1.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "dropout_2.tmp_1"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_2.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_3.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 8
+          dims: 64
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "dropout_5.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "layer_norm_6.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_4.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "fc_21.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "reshape_16.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_13.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 512
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_10.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 128
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "reshape_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_33.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_5.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_10.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "transpose_21.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 64
+        }
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "fc_32.w_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 128
+          dims: 512
+        }
+      }
+    }
+    persistable: true
+  }
+  vars {
+    name: "tmp_4"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+  }
+  vars {
+    name: "layer_norm_6.tmp_2"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 51
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "embedding_0.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 102
+          dims: 128
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  vars {
+    name: "elementwise_add_1.tmp_0"
+    type {
+      type: LOD_TENSOR
+      lod_tensor {
+        tensor {
+          data_type: FP32
+          dims: 2
+          dims: 8
+          dims: 51
+          dims: 51
+        }
+        lod_level: 0
+      }
+    }
+    persistable: false
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "src_word"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "embedding_0.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "embedding_0.tmp_0"
+    }
+    type: "lookup_table"
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: 10000
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Ids"
+      arguments: "src_pos"
+    }
+    inputs {
+      parameter: "W"
+      arguments: "src_pos_enc_table"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "embedding_1.tmp_0"
+    }
+    type: "lookup_table"
+    attrs {
+      name: "padding_idx"
+      type: LONG
+      l: 0
+    }
+    attrs {
+      name: "is_sparse"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "embedding_0.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "embedding_1.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "tmp_0"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_0.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 128
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_0.tmp_0"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_0.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_0.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_0.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_0.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_0.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_0.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_1.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_1.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_0.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_2.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_2.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_0.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_1.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_1.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_0.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_1.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_2.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_2.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_1.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_2.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_3.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_3.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_2.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "transpose_0.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "scale_0.tmp_0"
+    }
+    type: "scale"
+    attrs {
+      name: "scale"
+      type: FLOAT
+      f: 0.125
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "scale_0.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "transpose_1.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "matmul_0.tmp_0"
+    }
+    type: "matmul"
+    attrs {
+      name: "transpose_Y"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "transpose_X"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "matmul_0.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "src_slf_attn_bias"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "elementwise_add_0.tmp_0"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "elementwise_add_0.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "exp_0.tmp_0"
+    }
+    type: "exp"
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "exp_0.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reduce_sum_0.tmp_0"
+    }
+    type: "reduce_sum"
+    attrs {
+      name: "reduce_all"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "keep_dim"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dim"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "exp_0.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "reduce_sum_0.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "elementwise_div_0.tmp_0"
+    }
+    type: "elementwise_div"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 0
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "elementwise_div_0.tmp_0"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_1.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_1.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_1.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "transpose_2.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "matmul_1.tmp_0"
+    }
+    type: "matmul"
+    attrs {
+      name: "transpose_Y"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "transpose_X"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "matmul_1.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_3.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "transpose_3.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_4.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 512
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_4.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_3.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_3.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_3.tmp_0"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_2.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_2.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_2.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "dropout_0.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Bias"
+      arguments: "layer_norm_0.b_0"
+    }
+    inputs {
+      parameter: "Scale"
+      arguments: "layer_norm_0.w_0"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "tmp_1"
+    }
+    outputs {
+      parameter: "Mean"
+      arguments: "layer_norm_0.tmp_0"
+    }
+    outputs {
+      parameter: "Variance"
+      arguments: "layer_norm_0.tmp_1"
+    }
+    outputs {
+      parameter: "Y"
+      arguments: "layer_norm_0.tmp_2"
+    }
+    type: "layer_norm"
+    attrs {
+      name: "begin_norm_axis"
+      type: INT
+      i: 2
+    }
+    attrs {
+      name: "epsilon"
+      type: FLOAT
+      f: 9.99999974738e-06
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_0.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_4.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_4.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_4.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_4.b_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_4.tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_4.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_4.tmp_2"
+    }
+    type: "relu"
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_4.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_5.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_5.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_5.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_5.b_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_5.tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_5.tmp_1"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_3.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_3.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_3.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "layer_norm_0.tmp_2"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "tmp_2"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Bias"
+      arguments: "layer_norm_1.b_0"
+    }
+    inputs {
+      parameter: "Scale"
+      arguments: "layer_norm_1.w_0"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "tmp_2"
+    }
+    outputs {
+      parameter: "Mean"
+      arguments: "layer_norm_1.tmp_0"
+    }
+    outputs {
+      parameter: "Variance"
+      arguments: "layer_norm_1.tmp_1"
+    }
+    outputs {
+      parameter: "Y"
+      arguments: "layer_norm_1.tmp_2"
+    }
+    type: "layer_norm"
+    attrs {
+      name: "begin_norm_axis"
+      type: INT
+      i: 2
+    }
+    attrs {
+      name: "epsilon"
+      type: FLOAT
+      f: 9.99999974738e-06
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_1.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_6.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_6.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_1.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_7.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_7.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_1.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_8.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_8.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_6.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_5.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_5.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_4.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_7.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_6.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_6.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_5.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_8.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_7.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_7.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_6.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "transpose_4.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "scale_1.tmp_0"
+    }
+    type: "scale"
+    attrs {
+      name: "scale"
+      type: FLOAT
+      f: 0.125
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "scale_1.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "transpose_5.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "matmul_2.tmp_0"
+    }
+    type: "matmul"
+    attrs {
+      name: "transpose_Y"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "transpose_X"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "matmul_2.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "src_slf_attn_bias"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "elementwise_add_1.tmp_0"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "elementwise_add_1.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "exp_1.tmp_0"
+    }
+    type: "exp"
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "exp_1.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reduce_sum_1.tmp_0"
+    }
+    type: "reduce_sum"
+    attrs {
+      name: "reduce_all"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "keep_dim"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dim"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "exp_1.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "reduce_sum_1.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "elementwise_div_1.tmp_0"
+    }
+    type: "elementwise_div"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 0
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "elementwise_div_1.tmp_0"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_4.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_4.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_4.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "transpose_6.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "matmul_3.tmp_0"
+    }
+    type: "matmul"
+    attrs {
+      name: "transpose_Y"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "transpose_X"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "matmul_3.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_7.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "transpose_7.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_8.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 512
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_8.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_9.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_9.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_9.tmp_0"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_5.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_5.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_5.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "layer_norm_1.tmp_2"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "tmp_3"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Bias"
+      arguments: "layer_norm_2.b_0"
+    }
+    inputs {
+      parameter: "Scale"
+      arguments: "layer_norm_2.w_0"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "tmp_3"
+    }
+    outputs {
+      parameter: "Mean"
+      arguments: "layer_norm_2.tmp_0"
+    }
+    outputs {
+      parameter: "Variance"
+      arguments: "layer_norm_2.tmp_1"
+    }
+    outputs {
+      parameter: "Y"
+      arguments: "layer_norm_2.tmp_2"
+    }
+    type: "layer_norm"
+    attrs {
+      name: "begin_norm_axis"
+      type: INT
+      i: 2
+    }
+    attrs {
+      name: "epsilon"
+      type: FLOAT
+      f: 9.99999974738e-06
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_2.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_10.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_10.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_10.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_10.b_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_10.tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_10.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_10.tmp_2"
+    }
+    type: "relu"
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_10.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_11.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_11.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_11.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_11.b_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_11.tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_11.tmp_1"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_6.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_6.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_6.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "layer_norm_2.tmp_2"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "tmp_4"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Bias"
+      arguments: "layer_norm_3.b_0"
+    }
+    inputs {
+      parameter: "Scale"
+      arguments: "layer_norm_3.w_0"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "tmp_4"
+    }
+    outputs {
+      parameter: "Mean"
+      arguments: "layer_norm_3.tmp_0"
+    }
+    outputs {
+      parameter: "Variance"
+      arguments: "layer_norm_3.tmp_1"
+    }
+    outputs {
+      parameter: "Y"
+      arguments: "layer_norm_3.tmp_2"
+    }
+    type: "layer_norm"
+    attrs {
+      name: "begin_norm_axis"
+      type: INT
+      i: 2
+    }
+    attrs {
+      name: "epsilon"
+      type: FLOAT
+      f: 9.99999974738e-06
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_3.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_12.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_12.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_3.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_13.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_13.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_3.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_14.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_14.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_12.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_9.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_9.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_8.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_13.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_10.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_10.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_9.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_14.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_11.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_11.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_10.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "transpose_8.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "scale_2.tmp_0"
+    }
+    type: "scale"
+    attrs {
+      name: "scale"
+      type: FLOAT
+      f: 0.125
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "scale_2.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "transpose_9.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "matmul_4.tmp_0"
+    }
+    type: "matmul"
+    attrs {
+      name: "transpose_Y"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "transpose_X"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "matmul_4.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "src_slf_attn_bias"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "elementwise_add_2.tmp_0"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "elementwise_add_2.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "exp_2.tmp_0"
+    }
+    type: "exp"
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "exp_2.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reduce_sum_2.tmp_0"
+    }
+    type: "reduce_sum"
+    attrs {
+      name: "reduce_all"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "keep_dim"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dim"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "exp_2.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "reduce_sum_2.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "elementwise_div_2.tmp_0"
+    }
+    type: "elementwise_div"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 0
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "elementwise_div_2.tmp_0"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_7.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_7.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_7.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "transpose_10.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "matmul_5.tmp_0"
+    }
+    type: "matmul"
+    attrs {
+      name: "transpose_Y"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "transpose_X"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "matmul_5.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_11.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "transpose_11.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_12.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 512
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_12.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_15.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_15.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_15.tmp_0"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_8.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_8.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_8.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "layer_norm_3.tmp_2"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "tmp_5"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Bias"
+      arguments: "layer_norm_4.b_0"
+    }
+    inputs {
+      parameter: "Scale"
+      arguments: "layer_norm_4.w_0"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "tmp_5"
+    }
+    outputs {
+      parameter: "Mean"
+      arguments: "layer_norm_4.tmp_0"
+    }
+    outputs {
+      parameter: "Variance"
+      arguments: "layer_norm_4.tmp_1"
+    }
+    outputs {
+      parameter: "Y"
+      arguments: "layer_norm_4.tmp_2"
+    }
+    type: "layer_norm"
+    attrs {
+      name: "begin_norm_axis"
+      type: INT
+      i: 2
+    }
+    attrs {
+      name: "epsilon"
+      type: FLOAT
+      f: 9.99999974738e-06
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_4.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_16.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_16.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_16.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_16.b_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_16.tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_16.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_16.tmp_2"
+    }
+    type: "relu"
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_16.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_17.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_17.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_17.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_17.b_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_17.tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_17.tmp_1"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_9.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_9.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_9.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "layer_norm_4.tmp_2"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "tmp_6"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Bias"
+      arguments: "layer_norm_5.b_0"
+    }
+    inputs {
+      parameter: "Scale"
+      arguments: "layer_norm_5.w_0"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "tmp_6"
+    }
+    outputs {
+      parameter: "Mean"
+      arguments: "layer_norm_5.tmp_0"
+    }
+    outputs {
+      parameter: "Variance"
+      arguments: "layer_norm_5.tmp_1"
+    }
+    outputs {
+      parameter: "Y"
+      arguments: "layer_norm_5.tmp_2"
+    }
+    type: "layer_norm"
+    attrs {
+      name: "begin_norm_axis"
+      type: INT
+      i: 2
+    }
+    attrs {
+      name: "epsilon"
+      type: FLOAT
+      f: 9.99999974738e-06
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_5.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_18.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_18.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_5.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_19.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_19.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_5.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_20.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_20.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_18.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_13.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_13.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_12.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_19.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_14.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_14.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_13.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_20.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_15.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_15.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_14.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "transpose_12.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "scale_3.tmp_0"
+    }
+    type: "scale"
+    attrs {
+      name: "scale"
+      type: FLOAT
+      f: 0.125
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "scale_3.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "transpose_13.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "matmul_6.tmp_0"
+    }
+    type: "matmul"
+    attrs {
+      name: "transpose_Y"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "transpose_X"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "matmul_6.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "src_slf_attn_bias"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "elementwise_add_3.tmp_0"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "elementwise_add_3.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "exp_3.tmp_0"
+    }
+    type: "exp"
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "exp_3.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reduce_sum_3.tmp_0"
+    }
+    type: "reduce_sum"
+    attrs {
+      name: "reduce_all"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "keep_dim"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dim"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "exp_3.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "reduce_sum_3.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "elementwise_div_3.tmp_0"
+    }
+    type: "elementwise_div"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 0
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "elementwise_div_3.tmp_0"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_10.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_10.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_10.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "transpose_14.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "matmul_7.tmp_0"
+    }
+    type: "matmul"
+    attrs {
+      name: "transpose_Y"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "transpose_X"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "matmul_7.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_15.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "transpose_15.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_16.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 512
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_16.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_21.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_21.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_21.tmp_0"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_11.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_11.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_11.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "layer_norm_5.tmp_2"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "tmp_7"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Bias"
+      arguments: "layer_norm_6.b_0"
+    }
+    inputs {
+      parameter: "Scale"
+      arguments: "layer_norm_6.w_0"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "tmp_7"
+    }
+    outputs {
+      parameter: "Mean"
+      arguments: "layer_norm_6.tmp_0"
+    }
+    outputs {
+      parameter: "Variance"
+      arguments: "layer_norm_6.tmp_1"
+    }
+    outputs {
+      parameter: "Y"
+      arguments: "layer_norm_6.tmp_2"
+    }
+    type: "layer_norm"
+    attrs {
+      name: "begin_norm_axis"
+      type: INT
+      i: 2
+    }
+    attrs {
+      name: "epsilon"
+      type: FLOAT
+      f: 9.99999974738e-06
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_6.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_22.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_22.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_22.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_22.b_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_22.tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_22.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_22.tmp_2"
+    }
+    type: "relu"
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_22.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_23.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_23.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_23.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_23.b_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_23.tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_23.tmp_1"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_12.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_12.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_12.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "layer_norm_6.tmp_2"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "tmp_8"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Bias"
+      arguments: "layer_norm_7.b_0"
+    }
+    inputs {
+      parameter: "Scale"
+      arguments: "layer_norm_7.w_0"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "tmp_8"
+    }
+    outputs {
+      parameter: "Mean"
+      arguments: "layer_norm_7.tmp_0"
+    }
+    outputs {
+      parameter: "Variance"
+      arguments: "layer_norm_7.tmp_1"
+    }
+    outputs {
+      parameter: "Y"
+      arguments: "layer_norm_7.tmp_2"
+    }
+    type: "layer_norm"
+    attrs {
+      name: "begin_norm_axis"
+      type: INT
+      i: 2
+    }
+    attrs {
+      name: "epsilon"
+      type: FLOAT
+      f: 9.99999974738e-06
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_7.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_24.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_24.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_7.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_25.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_25.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_7.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_26.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_26.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_24.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_17.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_17.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_16.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_25.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_18.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_18.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_17.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_26.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_19.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_19.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_18.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "transpose_16.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "scale_4.tmp_0"
+    }
+    type: "scale"
+    attrs {
+      name: "scale"
+      type: FLOAT
+      f: 0.125
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "scale_4.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "transpose_17.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "matmul_8.tmp_0"
+    }
+    type: "matmul"
+    attrs {
+      name: "transpose_Y"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "transpose_X"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "matmul_8.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "src_slf_attn_bias"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "elementwise_add_4.tmp_0"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "elementwise_add_4.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "exp_4.tmp_0"
+    }
+    type: "exp"
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "exp_4.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reduce_sum_4.tmp_0"
+    }
+    type: "reduce_sum"
+    attrs {
+      name: "reduce_all"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "keep_dim"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dim"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "exp_4.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "reduce_sum_4.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "elementwise_div_4.tmp_0"
+    }
+    type: "elementwise_div"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 0
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "elementwise_div_4.tmp_0"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_13.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_13.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_13.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "transpose_18.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "matmul_9.tmp_0"
+    }
+    type: "matmul"
+    attrs {
+      name: "transpose_Y"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "transpose_X"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "matmul_9.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_19.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "transpose_19.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_20.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 512
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_20.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_27.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_27.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_27.tmp_0"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_14.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_14.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_14.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "layer_norm_7.tmp_2"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "tmp_9"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Bias"
+      arguments: "layer_norm_8.b_0"
+    }
+    inputs {
+      parameter: "Scale"
+      arguments: "layer_norm_8.w_0"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "tmp_9"
+    }
+    outputs {
+      parameter: "Mean"
+      arguments: "layer_norm_8.tmp_0"
+    }
+    outputs {
+      parameter: "Variance"
+      arguments: "layer_norm_8.tmp_1"
+    }
+    outputs {
+      parameter: "Y"
+      arguments: "layer_norm_8.tmp_2"
+    }
+    type: "layer_norm"
+    attrs {
+      name: "begin_norm_axis"
+      type: INT
+      i: 2
+    }
+    attrs {
+      name: "epsilon"
+      type: FLOAT
+      f: 9.99999974738e-06
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_8.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_28.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_28.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_28.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_28.b_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_28.tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_28.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_28.tmp_2"
+    }
+    type: "relu"
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_28.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_29.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_29.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_29.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_29.b_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_29.tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_29.tmp_1"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_15.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_15.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_15.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "layer_norm_8.tmp_2"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "tmp_10"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Bias"
+      arguments: "layer_norm_9.b_0"
+    }
+    inputs {
+      parameter: "Scale"
+      arguments: "layer_norm_9.w_0"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "tmp_10"
+    }
+    outputs {
+      parameter: "Mean"
+      arguments: "layer_norm_9.tmp_0"
+    }
+    outputs {
+      parameter: "Variance"
+      arguments: "layer_norm_9.tmp_1"
+    }
+    outputs {
+      parameter: "Y"
+      arguments: "layer_norm_9.tmp_2"
+    }
+    type: "layer_norm"
+    attrs {
+      name: "begin_norm_axis"
+      type: INT
+      i: 2
+    }
+    attrs {
+      name: "epsilon"
+      type: FLOAT
+      f: 9.99999974738e-06
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_9.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_30.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_30.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_9.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_31.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_31.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_9.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_32.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_32.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_30.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_21.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_21.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_20.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_31.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_22.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_22.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_21.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_32.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_23.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 8
+      ints: 64
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_23.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_22.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "transpose_20.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "scale_5.tmp_0"
+    }
+    type: "scale"
+    attrs {
+      name: "scale"
+      type: FLOAT
+      f: 0.125
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "scale_5.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "transpose_21.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "matmul_10.tmp_0"
+    }
+    type: "matmul"
+    attrs {
+      name: "transpose_Y"
+      type: BOOLEAN
+      b: true
+    }
+    attrs {
+      name: "transpose_X"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "matmul_10.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "src_slf_attn_bias"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "elementwise_add_5.tmp_0"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "elementwise_add_5.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "exp_5.tmp_0"
+    }
+    type: "exp"
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "exp_5.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reduce_sum_5.tmp_0"
+    }
+    type: "reduce_sum"
+    attrs {
+      name: "reduce_all"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "keep_dim"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dim"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "exp_5.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "reduce_sum_5.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "elementwise_div_5.tmp_0"
+    }
+    type: "elementwise_div"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 0
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "elementwise_div_5.tmp_0"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_16.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_16.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_16.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "transpose_22.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "matmul_11.tmp_0"
+    }
+    type: "matmul"
+    attrs {
+      name: "transpose_Y"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "transpose_X"
+      type: BOOLEAN
+      b: false
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "matmul_11.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "transpose_23.tmp_0"
+    }
+    type: "transpose"
+    attrs {
+      name: "axis"
+      type: INTS
+      ints: 0
+      ints: 2
+      ints: 1
+      ints: 3
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "transpose_23.tmp_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "reshape_24.tmp_0"
+    }
+    type: "reshape"
+    attrs {
+      name: "shape"
+      type: INTS
+      ints: 2
+      ints: -1
+      ints: 512
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "reshape_24.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_33.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_33.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_33.tmp_0"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_17.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_17.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_17.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "layer_norm_9.tmp_2"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "tmp_11"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Bias"
+      arguments: "layer_norm_10.b_0"
+    }
+    inputs {
+      parameter: "Scale"
+      arguments: "layer_norm_10.w_0"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "tmp_11"
+    }
+    outputs {
+      parameter: "Mean"
+      arguments: "layer_norm_10.tmp_0"
+    }
+    outputs {
+      parameter: "Variance"
+      arguments: "layer_norm_10.tmp_1"
+    }
+    outputs {
+      parameter: "Y"
+      arguments: "layer_norm_10.tmp_2"
+    }
+    type: "layer_norm"
+    attrs {
+      name: "begin_norm_axis"
+      type: INT
+      i: 2
+    }
+    attrs {
+      name: "epsilon"
+      type: FLOAT
+      f: 9.99999974738e-06
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "layer_norm_10.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_34.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_34.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_34.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_34.b_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_34.tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_34.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_34.tmp_2"
+    }
+    type: "relu"
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_34.tmp_2"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_35.w_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_35.tmp_0"
+    }
+    type: "mul"
+    attrs {
+      name: "y_num_col_dims"
+      type: INT
+      i: 1
+    }
+    attrs {
+      name: "x_num_col_dims"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_35.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "fc_35.b_0"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "fc_35.tmp_1"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: 2
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "fc_35.tmp_1"
+    }
+    outputs {
+      parameter: "Mask"
+      arguments: "dropout_18.tmp_1"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "dropout_18.tmp_0"
+    }
+    type: "dropout"
+    attrs {
+      name: "fix_seed"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "seed"
+      type: INT
+      i: 0
+    }
+    attrs {
+      name: "is_test"
+      type: BOOLEAN
+      b: false
+    }
+    attrs {
+      name: "dropout_prob"
+      type: FLOAT
+      f: 0.10000000149
+    }
+  }
+  ops {
+    inputs {
+      parameter: "X"
+      arguments: "dropout_18.tmp_0"
+    }
+    inputs {
+      parameter: "Y"
+      arguments: "layer_norm_10.tmp_2"
+    }
+    outputs {
+      parameter: "Out"
+      arguments: "tmp_12"
+    }
+    type: "elementwise_add"
+    attrs {
+      name: "axis"
+      type: INT
+      i: -1
+    }
+  }
+  ops {
+    inputs {
+      parameter: "Bias"
+      arguments: "layer_norm_11.b_0"
+    }
+    inputs {
+      parameter: "Scale"
+      arguments: "layer_norm_11.w_0"
+    }
+    inputs {
+      parameter: "X"
+      arguments: "tmp_12"
+    }
+    outputs {
+      parameter: "Mean"
+      arguments: "layer_norm_11.tmp_0"
+    }
+    outputs {
+      parameter: "Variance"
+      arguments: "layer_norm_11.tmp_1"
+    }
+    outputs {
+      parameter: "Y"
+      arguments: "layer_norm_11.tmp_2"
+    }
+    type: "layer_norm"
+    attrs {
+      name: "begin_norm_axis"
+      type: INT
+      i: 2
+    }
+    attrs {
+      name: "epsilon"
+      type: FLOAT
+      f: 9.99999974738e-06
+    }
+  }
+}
+

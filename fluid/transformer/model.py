@@ -5,10 +5,13 @@ import paddle.v2 as paddle
 import paddle.fluid as fluid
 import paddle.fluid.layers as layers
 
-from config import TrainTaskConfig, input_data_names, pos_enc_param_names
+from config import TrainTaskConfig, InferTaskConfig, input_data_names, pos_enc_param_names, encoder_input_data_names, decoder_input_data_names
 
+is_train = True
 # FIXME(guosheng): Remove out the batch_size from the model.
-batch_size = TrainTaskConfig.batch_size
+batch_size = 2  #TrainTaskConfig.batch_size
+
+# batch_size = InferTaskConfig.batch_size * InferTaskConfig.beam_size
 
 
 def position_encoding_init(n_position, d_pos_vec):
@@ -32,7 +35,8 @@ def multi_head_attention(queries,
                          d_value,
                          d_model,
                          num_heads=1,
-                         dropout_rate=0.):
+                         dropout_rate=0.,
+                         cache=None):
     """
     Multi-Head Attention. Note that attn_bias is added to the logit before
     computing softmax activiation to mask certain selected positions so that
@@ -116,7 +120,9 @@ def multi_head_attention(queries,
 
         scaled_q = layers.scale(x=q, scale=d_key**-0.5)
         product = layers.matmul(x=scaled_q, y=k, transpose_y=True)
-        weights = __softmax(layers.elementwise_add(x=product, y=attn_bias))
+        weights = __softmax(
+            layers.elementwise_add(
+                x=product, y=attn_bias) if attn_bias else product)
         if dropout_rate:
             weights = layers.dropout(
                 weights, dropout_prob=dropout_rate, is_test=False)
@@ -124,6 +130,10 @@ def multi_head_attention(queries,
         return out
 
     q, k, v = __compute_qkv(queries, keys, values, num_heads, d_key, d_value)
+
+    if cache:
+        k = cache["k"] = layers.concat(cache["k"], k, axis=1)
+        v = cache["v"] = layers.concat(cache["v"], v, axis=1)
 
     q = __split_heads(q, num_heads)
     k = __split_heads(k, num_heads)
@@ -270,37 +280,24 @@ def decoder_layer(dec_input,
                   d_value,
                   d_model,
                   d_inner_hid,
-                  dropout_rate=0.):
+                  dropout_rate=0.,
+                  cache=None):
     """ The layer to be stacked in decoder part.
 
     The structure of this module is similar to that in the encoder part except
     a multi-head attention is added to implement encoder-decoder attention.
     """
-    slf_attn_output = multi_head_attention(
-        dec_input,
-        dec_input,
-        dec_input,
-        slf_attn_bias,
-        d_key,
-        d_value,
-        d_model,
-        n_head,
-        dropout_rate, )
+    slf_attn_output = multi_head_attention(dec_input, dec_input, dec_input,
+                                           slf_attn_bias, d_key, d_value,
+                                           d_model, n_head, dropout_rate, cache)
     slf_attn_output = post_process_layer(
         dec_input,
         slf_attn_output,
         "dan",  # residual connection + dropout + layer normalization
         dropout_rate, )
     enc_attn_output = multi_head_attention(
-        slf_attn_output,
-        enc_output,
-        enc_output,
-        dec_enc_attn_bias,
-        d_key,
-        d_value,
-        d_model,
-        n_head,
-        dropout_rate, )
+        slf_attn_output, enc_output, enc_output, dec_enc_attn_bias, d_key,
+        d_value, d_model, n_head, dropout_rate, cache)
     enc_attn_output = post_process_layer(
         slf_attn_output,
         enc_attn_output,
@@ -344,6 +341,40 @@ def decoder(dec_input,
             d_model,
             d_inner_hid,
             dropout_rate, )
+        dec_input = dec_output
+    return dec_output
+
+
+def fast_decoder(dec_input,
+                 enc_output,
+                 dec_slf_attn_bias,
+                 dec_enc_attn_bias,
+                 n_layer,
+                 n_head,
+                 d_key,
+                 d_value,
+                 d_model,
+                 d_inner_hid,
+                 dropout_rate=0.):
+    """
+    This module is used for inference.
+    """
+    caches = [{
+        "k": layers.create_global_var(
+            shape=[batch_size, 1, d_key * n_head],
+            value=0.,
+            dtype="float32",
+            persistable=True),
+        "v": layers.create_global_var(
+            shape=[batch_size, 1, d_value * n_head],
+            value=0.,
+            dtype="float32",
+            persistable=True)
+    } for i in range(n_layer)]
+    for i in range(n_layer):
+        dec_output = decoder_layer(
+            dec_input, enc_output, dec_slf_attn_bias, dec_enc_attn_bias, n_head,
+            d_key, d_value, d_model, d_inner_hid, dropout_rate, caches[i])
         dec_input = dec_output
     return dec_output
 
@@ -485,3 +516,139 @@ def transformer(
         append_batch_size=False)
     weighted_cost = cost * weights
     return layers.reduce_sum(weighted_cost)
+
+
+def wrap_encoder(
+        src_vocab_size,
+        max_length,
+        n_layer,
+        n_head,
+        d_key,
+        d_value,
+        d_model,
+        d_inner_hid,
+        dropout_rate,
+        src_pad_idx,
+        pos_pad_idx, ):
+    # The shapes here act as placeholder.
+    # The shapes set here is to pass the infer-shape in compile time. The actual
+    # shape of src_word in run time is:
+    # [batch_size * max_src_length_in_a_batch, 1].
+    src_word = layers.data(
+        name=encoder_input_data_names[0],
+        shape=[batch_size * max_length, 1],
+        dtype="int64",
+        append_batch_size=False)
+    # The actual shape of src_pos in runtime is:
+    # [batch_size * max_src_length_in_a_batch, 1].
+    src_pos = layers.data(
+        name=encoder_input_data_names[1],
+        shape=[batch_size * max_length, 1],
+        dtype="int64",
+        append_batch_size=False)
+    # The actual shape of src_slf_attn_bias in runtime is:
+    # [batch_size, n_head, max_src_length_in_a_batch, max_src_length_in_a_batch].
+    # This input is used to remove attention weights on paddings.
+    src_slf_attn_bias = layers.data(
+        name=encoder_input_data_names[2],
+        shape=[batch_size, n_head, max_length, max_length],
+        dtype="float32",
+        append_batch_size=False)
+    enc_input = prepare_encoder(
+        src_word,
+        src_pos,
+        src_vocab_size,
+        d_model,
+        src_pad_idx,
+        max_length,
+        dropout_rate, )
+    enc_output = encoder(
+        enc_input,
+        src_slf_attn_bias,
+        n_layer,
+        n_head,
+        d_key,
+        d_value,
+        d_model,
+        d_inner_hid,
+        dropout_rate, )
+    return enc_output
+
+
+def wrap_decoder(trg_vocab_size,
+                 max_length,
+                 n_layer,
+                 n_head,
+                 d_key,
+                 d_value,
+                 d_model,
+                 d_inner_hid,
+                 dropout_rate,
+                 trg_pad_idx,
+                 pos_pad_idx,
+                 enc_output=None):
+    # The actual shape of trg_word is in runtime is:
+    # [batch_size * max_trg_length_in_a_batch, 1].
+    trg_word = layers.data(
+        name=decoder_input_data_names[0],
+        shape=[batch_size * max_length, 1],
+        dtype="int64",
+        append_batch_size=False)
+    # The actual shape of trg_pos in runtime is:
+    # [batch_size * max_trg_length_in_a_batch, 1].
+    trg_pos = layers.data(
+        name=decoder_input_data_names[1],
+        shape=[batch_size * max_length, 1],
+        dtype="int64",
+        append_batch_size=False)
+    # The actual shape of trg_slf_attn_bias in runtime is:
+    # [batch_size, n_head, max_trg_length_in_batch, max_trg_length_in_batch].
+    # This is used to remove attention weights on paddings and subsequent words.
+    # For inference, this can be removed out.
+    trg_slf_attn_bias = layers.data(
+        name=decoder_input_data_names[2],
+        shape=[batch_size, n_head, max_length, max_length],
+        dtype="float32",
+        append_batch_size=False) if enc_output is not None else None
+    # The actual shape of trg_src_attn_bias in runtime is:
+    # [batch_size, n_head, max_trg_length_in_batch, max_src_length_in_batch].
+    # This is used to remove attention weights on paddings.
+    trg_src_attn_bias = layers.data(
+        name=decoder_input_data_names[3],
+        shape=[batch_size, n_head, max_length, max_length],
+        dtype="float32",
+        append_batch_size=False)
+    enc_output = layers.data(
+        name=decoder_input_data_names[4],
+        shape=[batch_size, max_length, d_model],
+        dtype="float32",
+        append_batch_size=False) if enc_output is None else enc_output
+    dec_input = prepare_decoder(
+        trg_word,
+        trg_pos,
+        trg_vocab_size,
+        d_model,
+        trg_pad_idx,
+        max_length,
+        dropout_rate, )
+    dec_output = decoder(
+        dec_input,
+        enc_output,
+        trg_slf_attn_bias,
+        trg_src_attn_bias,
+        n_layer,
+        n_head,
+        d_key,
+        d_value,
+        d_model,
+        d_inner_hid,
+        dropout_rate, )
+
+    predict = layers.reshape(
+        x=layers.fc(input=dec_output,
+                    size=trg_vocab_size,
+                    bias_attr=False,
+                    num_flatten_dims=2),
+        shape=[-1, trg_vocab_size],
+        act="softmax")
+    return predict

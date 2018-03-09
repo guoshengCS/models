@@ -1,4 +1,8 @@
+import sys
+import os
+import time
 import numpy as np
+import argparse
 
 import paddle.v2 as paddle
 import paddle.fluid as fluid
@@ -7,6 +11,21 @@ from model import transformer, position_encoding_init
 from optim import LearningRateScheduler
 from config import TrainTaskConfig, ModelHyperParams, \
         pos_enc_param_names, input_data_names
+
+
+def parse_args():
+    parser = argparse.ArgumentParser("Training for stacked LSTMP model.")
+    parser.add_argument(
+        '--batch_size',
+        type=int,
+        default=32,
+        help='The sequence number of a batch data. (default: %(default)d)')
+    parser.add_argument(
+        '--minimum_batch_size',
+        type=int,
+        default=1,
+        help='The minimum sequence number of a batch data. '
+        '(default: %(default)d)')
 
 
 def prepare_batch_input(insts, input_data_names, src_pad_idx, trg_pad_idx,
@@ -144,6 +163,45 @@ def main():
             cost_val = np.array(outs[0])
             print("pass_id = " + str(pass_id) + " batch = " + str(batch_id) +
                   " avg_cost = " + str(cost_val))
+
+
+class Statistics(object):
+    def __init__(self, loss=0, n_words=0, n_correct=0):
+        self.loss = loss
+        self.n_words = n_words
+        self.n_correct = n_correct
+        self.n_src_words = 0
+        self.start_time = time.time()
+
+    def update(self, stat):
+        self.loss += stat.loss
+        self.n_words += stat.n_words
+        self.n_correct += stat.n_correct
+
+    def accuracy(self):
+        return 100 * (self.n_correct / self.n_words)
+
+    def ppl(self):
+        return np.exp(min(self.loss / self.n_words, 100))
+
+    def elapsed_time(self):
+        return time.time() - self.start_time
+
+    def output(self, epoch, batch, n_batches, start):
+        """Write out statistics to stdout.
+        Args:
+           epoch (int): current epoch
+           batch (int): current batch
+           n_batch (int): total batches
+           start (int): start time of epoch.
+        """
+        t = self.elapsed_time()
+        print(("Epoch %2d, %5d/%5d; acc: %6.2f; ppl: %6.2f; " +
+               "%3.0f src tok/s; %3.0f tgt tok/s; %6.0f s elapsed") %
+              (epoch, batch, n_batches, self.accuracy(), self.ppl(),
+               self.n_src_words / (t + 1e-5), self.n_words / (t + 1e-5),
+               time.time() - start))
+        sys.stdout.flush()
 
 
 if __name__ == "__main__":
