@@ -3,6 +3,8 @@ import ast
 import multiprocessing
 import numpy as np
 import os
+import sys
+sys.path.append("../")
 from functools import partial
 
 import paddle
